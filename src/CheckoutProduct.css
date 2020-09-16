@@ -24,6 +24,7 @@
 }
 
 .checkoutProduct__info > button {
+    margin-top: 10px;
     background-color: #f0c14b;
     border: 1px solid;
     height: 20px;

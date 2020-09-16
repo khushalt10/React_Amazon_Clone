@@ -3,10 +3,11 @@ import { useStateValue } from './StateProvider'
 import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct';
 import Subtotal from './Subtotal';
+import { Link } from 'react-router-dom';
 
 function Checkout() {
 
-    const [{basket}] = useStateValue();
+    const [{basket, user}] = useStateValue();
 
     return (
         <div className="checkout">
@@ -30,7 +31,10 @@ function Checkout() {
             )}
             </div>   
                <div className="checkout__right">
-                    <Subtotal />
+                   {user && <Subtotal />
+                   }
+                   {!user && <h1><Link to="/login">Login</Link> before Chekout</h1>}
+
                 </div>    
         </div>
     )
