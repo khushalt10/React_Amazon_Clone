@@ -13,7 +13,7 @@ import {Elements} from '@stripe/react-stripe-js'
 import Orders from './Orders';
 
 const promise = loadStripe('pk_test_51HQveOJv9YLAD6yODgWIgRXkMHo9eTB6ojRIaafEMkHX0ycMClsS60rhhuLCPw7Ugb0Jtx5ovVs515JIV6cLWIlh00bxyYqBod');
-
+// https://clone-ff370.web.app/
 function App() {
 
   const [{user}, dispatch] = useStateValue();
